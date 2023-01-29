@@ -1,1 +1,44 @@
-<h1>Root page</h1>
+<h2 class="ui center aligned icon header">
+  <i class="circular inverted blue users icon"></i>
+  Message Me App
+</h2>
+
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid card chatbox">
+      <div class="content">
+        <div class="ui feed">
+          <%= render @messages %>
+        </div>
+      </div>
+      <div class="extra content">
+        <form class="ui reply form">
+          <div class="field">
+          <div class="ui fluid action input">
+            <input type="text" placeholder="Type a message...">
+              <button class="ui blue button">Send</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="four wide column">
+    <div class="ui fluid card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
